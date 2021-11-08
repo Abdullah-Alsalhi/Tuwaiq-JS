@@ -22,4 +22,6 @@ Tuwaiq-Academey course of JavaScript programming language.
 
      touch main.js
 
-##### 
+##### Try some commands and show them on console.
+
+     console.log()
