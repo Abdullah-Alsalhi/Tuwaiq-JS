@@ -14,12 +14,12 @@ Tuwaiq-Academey course of JavaScript programming language.
 
 ##### Change the directory into  *Tuwaiq-1000* and create 3 files called *index.html* , *style.css* and *main.js*.
 
-     cd Tuwaiq-1000
+    $ cd Tuwaiq-1000
 
-     touch index.html
+    $ touch index.html
 
-     touch style.css
+    $ touch style.css
 
-     touch main.js
+    $ touch main.js
 
 ##### 
