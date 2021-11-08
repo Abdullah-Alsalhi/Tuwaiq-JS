@@ -10,5 +10,5 @@ Tuwaiq-Academey course of JavaScript programming language.
 
 ### Make a directory called Tuwaiq-1000 using Command Line.
     
-    ` mkdir Tuwaiq-1000 `
+     mkdir Tuwaiq-1000
 
