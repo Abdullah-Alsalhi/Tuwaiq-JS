@@ -3,7 +3,7 @@ Tuwaiq-Academey course of JavaScript programming language.
 
 ## Frist Day Homework
 
-- Insure you downloaded these recommendations list:
+- Insure you are downloaded these recommendations list:
     - Google Chrome
     - Visual Studio Code
     - Git Bash (*for windows os only*)
