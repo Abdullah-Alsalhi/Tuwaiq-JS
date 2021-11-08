@@ -8,17 +8,18 @@ Tuwaiq-Academey course of JavaScript programming language.
     - Visual Studio Code
     - Git Bash (*for windows os only*)
 
-#### Make a directory called Tuwaiq-1000 using Command Line.
+##### Make a directory called Tuwaiq-1000 using Command Line.
     
      mkdir Tuwaiq-1000
 
-#### Change the directory into  *Tuwaiq-1000* and create 3 files called *index.html* , *style.css* and *main.js*.
+##### Change the directory into  *Tuwaiq-1000* and create 3 files called *index.html* , *style.css* and *main.js*.
 
      cd Tuwaiq-1000
-     
+
      touch index.html
-     
+
      touch style.css
 
      touch main.js
 
+##### 
