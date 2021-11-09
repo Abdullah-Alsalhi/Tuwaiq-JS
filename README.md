@@ -20,3 +20,17 @@ Tuwaiq-Academey course of JavaScript programming language.
           - Boolean
           - Null
           - Undefined
+## Homework - Day-2
+
+##### Do the followings variables:
+
+- Any number you want.
+- The value of first variable * 4.
+- The value of first variable added to second variable.
+- The value of third variable subtracted from second variable.
+- The fifth variable is your first name.
+- The sixth variable is you last name.
+- The seventh variable is your age.
+- The eighth variable is the concatentation of the variables as following: => my name is *fifth variable* *sixth variable*. My age is *seventh variable*.
+- The nineth variable is length of eighth variable.
+- The tenth variable is the letter in index 7 of the eighth variable.
