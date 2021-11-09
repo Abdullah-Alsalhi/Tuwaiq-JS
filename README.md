@@ -13,3 +13,10 @@ Tuwaiq-Academey course of JavaScript programming language.
      - combine them together.
      - single line comment in front of code statment.
      - multiple lines comment in front of code statment.
+### Exercise - Data Types
+     - create the followings:
+          - String
+          - Number
+          - Boolean
+          - Null
+          - Undefined
