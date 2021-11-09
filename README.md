@@ -7,5 +7,3 @@ Tuwaiq-Academey course of JavaScript programming language.
           - **set second varibale = value of first variable * 2**
           - **set third variable = first variable value + second variable value**
           - **set forth variable = third variable value - first variable value**
-     
-     
