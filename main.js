@@ -30,3 +30,23 @@ console.log(result_18);
 console.log(result_19);
 console.log(result_20);
 console.log(result_21);
+
+// Exersice - Comparasions
+
+let result_1b = 3 == 7;
+let result_2b = 10 != 8;
+let result_3b = 3 > 5;
+let result_4b = 4 >= 3;
+let result_5b = 4 < 55;
+let result_6b = 6 <= 3;
+let result_7b = 7 === 7;
+let result_8b = 7 !== 7;
+
+console.log(result_1b);
+console.log(result_2b);
+console.log(result_3b);
+console.log(result_4b);
+console.log(result_5b);
+console.log(result_6b);
+console.log(result_7b);
+console.log(result_8b);
