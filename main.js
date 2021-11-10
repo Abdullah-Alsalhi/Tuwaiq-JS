@@ -15,6 +15,8 @@ console.log(result_8);
 console.log(result_9);
 console.log(result_10);
 
+console.log('----------')
+
 // Exercise - Computation 
 
 let result_16 = 9 - 2 + 8;
@@ -30,6 +32,8 @@ console.log(result_18);
 console.log(result_19);
 console.log(result_20);
 console.log(result_21);
+
+console.log('----------')
 
 // Exersice - Comparasions
 
@@ -50,3 +54,31 @@ console.log(result_5b);
 console.log(result_6b);
 console.log(result_7b);
 console.log(result_8b);
+
+console.log('----------')
+
+// Homework - Day-3
+
+let hw_D03_1 = 1 - 3 + 6 > 1 - 8;
+let hw_D03_2 = 2 * (3 + 9) >= 9 - 1 * 0;
+let hw_D03_3 = (6/2) * 5 <= 1 - 5;
+let hw_D03_4 = 15 % 2 > 9 - 1;
+let hw_D03_5 = 7 * 7 === '4' + '9';
+let hw_D03_6 = 7 * 7 == '4' + '9';
+let hw_D03_7 = 7 * 7 !== '4' + '9';
+let hw_D03_8 = 7 * 7 != '4' + '9';
+let hw_D03_9 = 7 > '7';
+let hw_D03_10 = 7 <= '7';
+let hw_D03_11 = 9 + 2 > 8 - 5 * 9;
+
+console.log(hw_D03_1);
+console.log(hw_D03_2);
+console.log(hw_D03_3);
+console.log(hw_D03_4);
+console.log(hw_D03_5);
+console.log(hw_D03_6);
+console.log(hw_D03_7);
+console.log(hw_D03_8);
+console.log(hw_D03_9);
+console.log(hw_D03_10);
+console.log(hw_D03_11);
