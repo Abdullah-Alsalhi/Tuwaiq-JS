@@ -25,3 +25,19 @@
 
 - create a function to print someone's name and call it with 3 diffrent names.
 - create a function to sum two numbers.
+
+###### function as a value:
+
+- create a function which return:
+     - sum of 3 numbers and call it three times with diffrent numbers.
+     - greeting statment "Hello" and name of person and call it three times with diffrent names.
+
+### Homework
+
+- Create the following functions and call them three times with diffrent inputs:
+     - function prints someone's name and age.
+     - function returns sum of two numbers and subtraction of them.
+     - function returns result of multiplication of two numbers.
+     - function returns the remaining of division over 3.
+     - function returns length of string.
+     - function returns first letter from string.

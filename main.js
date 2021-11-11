@@ -54,3 +54,94 @@ function sumTwoNumbers(x, y){
 sumTwoNumbers(3, 2);
 sumTwoNumbers(2, 2);
 sumTwoNumbers(4, 7);
+
+// Exercise - function as a value
+
+function num_summation(a, b, c){
+    return a + b + c; 
+}
+
+console.log(num_summation(4, 7 , 5));
+console.log(num_summation(1, 2, 3));
+console.log(num_summation(9, 1, 3));
+
+function hello(someone){
+    return "Hello " + someone + ".";
+}
+
+console.log(hello("Abdullah"));
+console.log(hello("Salman"));
+console.log(hello("Stranger"));
+
+console.clear()
+
+
+// Homework
+
+function nameAge(name_a, age_a){
+    console.log("Your name: " + name_a + " Your age: " + age_a);
+}
+
+nameAge("Ali", 16);
+nameAge("Nasser", 17);
+nameAge("Bander", 15);
+
+console.log("-------------")
+
+function add_numbers(i, j){
+    return i + j;
+}
+
+console.log(add_numbers(3, 3));
+console.log(add_numbers(2, 2));
+console.log(add_numbers(7, 1));
+
+console.log("-------------")
+
+function subtract_numbers(h, k){
+    return h - k;
+}
+
+console.log(subtract_numbers(7, 2));
+console.log(subtract_numbers(9, 3));
+console.log(subtract_numbers(4, 4));
+
+console.log("-------------")
+
+function multiplicationTwoNumbers(r, z){
+    return r * z;
+}
+
+console.log(multiplicationTwoNumbers(2, 9));
+console.log(multiplicationTwoNumbers(4, 8));
+console.log(multiplicationTwoNumbers(3, 3));
+
+console.log("-------------")
+
+function remaining_3(v){
+    return v % 3;
+}
+
+console.log(remaining_3(3));
+console.log(remaining_3(7));
+console.log(remaining_3(8));
+
+console.log("-------------")
+
+function stringLength(statment){
+    return statment.length
+}
+
+console.log(stringLength("Abdullah"));
+console.log(stringLength("DevOps Engineer"));
+console.log(stringLength("JavaScript is amazing"));
+
+console.log("-------------")
+
+function firstLetter(word){
+    return word[0]
+}
+
+console.log(firstLetter("Java"));
+console.log(firstLetter("Script"));
+console.log(firstLetter("done"));
