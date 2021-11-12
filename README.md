@@ -13,7 +13,7 @@ Tuwaiq-Academey course of JavaScript programming language.
      mkdir Tuwaiq-1000
 
 ##### Change the directory into  *Tuwaiq-1000* and create 3 files called *index.html* , *style.css* and *main.js*.
-
+```bash
      cd Tuwaiq-1000
 
      touch index.html
@@ -21,7 +21,8 @@ Tuwaiq-Academey course of JavaScript programming language.
      touch style.css
 
      touch main.js
-
+```
 ##### Try some commands and show them on console.
-
+```javascript
      console.log()
+```
