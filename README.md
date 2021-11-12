@@ -4,7 +4,7 @@
 ### Exercise - logic Operations (AND(&&) - OR(||) - NOT(!))
 
 ###### Try these logic opreations on console:
-
+```javascript
      let ex_1b = (false && false) || true;
      let ex_2b = (false && true) || false;
      let ex_3b = 10 > 25 * 12 || false;
@@ -15,7 +15,7 @@
      let ex_8b = (false && true) || true || false;
      let ex_9b = (15 % 3) + 6 > 10 || 40 < 7;
      let ex_10b = 9 + 6 > 10 && 13 <= 33;
-
+```
 ###### Calling function:
 
 - create a function that prints 'I like JavaScript' 5 times and call it.
