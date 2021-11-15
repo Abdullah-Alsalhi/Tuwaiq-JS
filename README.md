@@ -83,9 +83,42 @@ function codingLanguage(language){
 
 **create these followings functions and call them 3 times:**
 - function returns person's name if his age is bigger ro equal to 18 , otherwise return his age. *[if else]*
+```javascript
+function nameAge(name, age){
+    if (age >= 18){
+        return name;
+    }else{
+        return age;
+    };
+};
+```
 - function returns "great" if the grade is bigger or equal to 70 , and returns "good" if the grade is less than 70 and bigger than 50 and returns "failed" if the grade is equal to 50 or less than 50. *[else if]*
+```javascript
+function testGrade(grade){
+    if (grade >= 70){
+        return "great";
+    }else if (grade < 70 && grade > 50){
+        return "good";
+    }else{
+        return "failed";
+    };
+};
+```
 - function takes two numbers and operator sign: *[else if]*
     - if the sign "-" return the subtraction first number from the second number.
     - if the sign "+" return the addition of two numbers.
     - if the sign "/" return the first number divided to second number.
     - if the sign "*" return the multiplication of two numbers.
+```javascript
+function calculator(first_num, second_num, sign){
+    if (sign === "-"){
+        return first_num - second_num;
+    }else if (sign === "+"){
+        return first_num + second_num;
+    }else if (sign === "/"){
+        return first_num / second_num;
+    }else if (sign === "*"){
+        return first_num * second_num;
+    };
+};
+```
