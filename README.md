@@ -27,17 +27,15 @@ function stringChecker(string){
 
 
 **create the following function and call it three times using (if)(else)**
-- function takes two numbers and returns bigger number or " The numbers are equal " in case they are equal.
+- function takes two numbers and returns bigger number.
 ```javascript
 function NumCheck(numberA, numberB){
     if (numberA > numberB){
         return numberA
     }
-    if (numberA === numberB){
+    else {
         return "The numbers are equal"
-    } else {
-        return numberB
-    };
+    }; 
 };
 
 ```
@@ -51,3 +49,35 @@ function strCheck(note){
     };
 };
 ```
+**create the following function and call it three times using (if)(else if)(else)**
+- function takes two numbers and returns bigger number or " The numbers are equal " in case they are equal.
+```javascript
+function numberCheckValue(numA, numB){
+    if (numA > numB){
+        return numA;
+    }
+    else if (numA < numB){
+        return numB;
+    } else {
+        return "The numbers are equal."
+    }
+}
+```
+- function takes string and returns "Web Developer" if the string is "JavaScript" and if the string is "Swift" returns "IOS Developer" and if the string is "Kotlin" returns "Android Developer" , otherwise; return "Other Developer".
+```javascript
+function codingLanguage(language){
+    if (language === "JavaScript"){
+        return "Web Developer"
+    } else if (language === "Swift"){
+        return "IOS Developer"
+    } else if (language === "Kotlin"){
+        return "Android Developer"
+    } else {
+        return "Other Developer"
+    };
+
+};
+```
+
+## Homework
+

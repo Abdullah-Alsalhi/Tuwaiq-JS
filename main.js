@@ -24,7 +24,6 @@ numberChecker(3, 1);
 numberChecker(3, 3);
 numberChecker(1, 3);
 
-console.log("-------------");
 
 stringChecker("JavaScript");
 stringChecker("Programming Mode");
@@ -33,20 +32,18 @@ stringChecker("Programming Mode");
 
 function NumCheck(numberA, numberB){
     if (numberA > numberB){
-        return numberA
+        return numberA;
     }
-    if (numberA === numberB){
-        return "The numbers are equal"
-    } else {
-        return numberB
-    };
+    else {
+        return "The numbers are equal";
+    }; 
 };
 
 function strCheck(note){
     if (note === "JavaScript"){
-        return "Welcome"
+        return "Welcome";
     } else {
-        return "Goodbye"
+        return "Goodbye";
     };
 };
 
@@ -56,3 +53,40 @@ NumCheck(2, 7);
 
 strCheck("JavaScript");
 strCheck("javascript");
+
+// Exercise - if else if else statement
+
+function numberCheckValue(numA, numB){
+    if (numA > numB){
+        return numA;
+    }
+    else if (numA < numB){
+        return numB;
+    } else {
+        return "The numbers are equal.";
+    };
+};
+
+numberCheckValue(7, 4);
+numberCheckValue(7, 9);
+numberCheckValue(7, 7);
+
+function codingLanguage(language){
+    if (language === "JavaScript"){
+        return "Web Developer";
+    } else if (language === "Swift"){
+        return "IOS Developer";
+    } else if (language === "Kotlin"){
+        return "Android Developer";
+    } else {
+        return "Other Developer";
+    };
+
+};
+
+codingLanguage("JavaScript");
+codingLanguage("Swift");
+codingLanguage("Kotlin");
+codingLanguage("Python");
+
+// Homework 
