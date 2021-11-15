@@ -91,3 +91,57 @@ codingLanguage("Python");
 
 // Homework 
 
+// function returns person's name if his age is bigger ro equal to 18 , otherwise return his age. *[if else]*
+
+function nameAge(name, age){
+    if (age >= 18){
+        return name;
+    }else{
+        return age;
+    };
+};
+
+nameAge("Abdullah", 27);
+nameAge("Ali", 13);
+nameAge("Mohammed", 18);
+
+/* - function returns "great" if the grade is bigger or equal to 70 , 
+and returns "good" if the grade is less than 70 and bigger than 50 
+and returns "failed" if the grade is equal to 50 or less than 50. *[else if]* */
+
+function testGrade(grade){
+    if (grade >= 70){
+        return "great";
+    }else if (grade < 70 && grade > 50){
+        return "good";
+    }else{
+        return "failed";
+    };
+};
+
+testGrade(70);
+testGrade(55);
+testGrade(50);
+
+/* function takes two numbers and operator sign: *[else if]*
+    - if the sign "-" return the subtraction first number from the second number.
+    - if the sign "+" return the addition of two numbers.
+    - if the sign "/" return the first number divided to second number.
+    - if the sign "*" return the multiplication of two numbers. */
+
+function calculator(first_num, second_num, sign){
+    if (sign === "-"){
+        return first_num - second_num;
+    }else if (sign === "+"){
+        return first_num + second_num;
+    }else if (sign === "/"){
+        return first_num / second_num;
+    }else if (sign === "*"){
+        return first_num * second_num;
+    };
+};
+
+calculator(3, 2, "-");
+calculator(3, 2, "+");
+calculator(3, 2, "/");
+calculator(3, 2, "*");
