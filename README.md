@@ -81,3 +81,11 @@ function codingLanguage(language){
 
 ## Homework
 
+**create these followings functions and call them 3 times:**
+- function returns person's name if his age is bigger ro equal to 18 , otherwise return his age only. *[if else]*
+- function returns "great" if the grade is bigger or equal to 70 , and returns "good" if the grade is less than 70 and bigger than 50 and returns "failed" if the grade is equal to 50 or less than 50. *[else if]*
+- function takes two numbers and operator sign: *[else if]*
+    - if the sign "-" return the subtraction first number from the second number.
+    - if the sign "+" return the addition of two numbers.
+    - if the sign "/" return the first number divided to second number.
+    - if the sign "*" return the multiplication of two numbers.
