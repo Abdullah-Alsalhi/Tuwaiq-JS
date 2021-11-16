@@ -34,6 +34,8 @@ function arrayAddItem(array, item){
     return array;
 };
 
-arrayAddItem(ex_2, "DevOps");
-arrayAddItem(ex_2, "Coding");
-arrayAddItem(ex_2, "IT");
+let ex_3 = [];
+
+arrayAddItem(ex_3, "DevOps");
+arrayAddItem(ex_3, "Coding");
+arrayAddItem(ex_3, "IT");
