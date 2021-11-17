@@ -73,7 +73,7 @@ array_length(X)
 // function takes an array and print each item of it.
 
 function array_items(list_3){
-    for (i = 0; i < list_3.length; i++){
+    for (let i = 0; i < list_3.length; i++){
         console.log(list_3[i]);
     };
 };
@@ -85,7 +85,7 @@ array_items(X)
 let numbersArray = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30];
 
 function numberChecker(list_4){
-    for (i = 0; i < numbersArray.length; i++){
+    for (let i = 0; i < numbersArray.length; i++){
         if (list_4[i] > 15){
             console.log(list_4[i]);
         }
