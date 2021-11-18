@@ -104,3 +104,64 @@ function joinArray(array){
 };
 
 joinArray(students_1);
+
+// Homework
+
+// function takes an array and string and return it back after adding the string to it.
+
+function newElement(array, object){
+    array.push(object);
+    return array;
+};
+
+let students_HW = ["Raghad", "Khalid", "Suhaib", "Ahmad"];
+
+newElement(students_HW, "Abdullah");
+
+// function takes an array and return it back after deleting last item of it.
+
+function deleItem(array){
+    array.pop();
+    return array;
+};
+
+deleItem(students_HW);
+
+// function takes an array and object and returns "YES" if the object included to it and "NO" if the object is not included.
+
+function includesCheck(array, item){
+    let output = array.includes(item)
+    if (output === true){
+        return "YES";
+    }else {
+        return "NO";
+    };
+};
+
+includesCheck(students_HW, "Abdullah");
+
+// function takes an array consisting of numbers and returns the array after multiplying each element in 2.
+
+function multyItem(array){
+    for (let i = 0; i < array.length; i++){
+        array[i] = array[i] * 2;
+    };
+    return array;
+}
+
+numArray = [1, 3, 5, 7, 9];
+
+num_3 = [1, 1, 1, 1, 1];
+
+multyItem(numArray);
+multyItem(num_3);
+
+// function takes a string consisting of words and space between them and return an array with these words.
+
+function list(string){
+    let output = string.split(" ");
+    return output;
+};
+
+list("How are you?");
+list("I am learning everyday");
