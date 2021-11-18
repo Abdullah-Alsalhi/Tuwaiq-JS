@@ -64,3 +64,43 @@ function module3(array){
 let exer_3 = [17, 15, 8, 12, 7, 25, 24];
 
 module3(exer_3);
+
+
+// Exercise - function takes two arrays and merge them in new one array.
+
+let students_1 = ["Raghad", "Khalid", "Suhaib", "Ahmad"];
+let students_2 = ["Ahmad", "Ali", "Mohammed"];
+
+function concatArray(array_1, array_2){
+    let array_3 = array_1.concat(array_2);
+    return array_3;
+};
+
+concatArray(students_1, students_2);
+
+// function takes an array and return the reverse of it.
+
+function reverseArray(array){
+    return array.reverse();
+};
+
+reverseArray(students_1);
+
+// function takes an array and object and look for the object inside that array.
+
+function objectArray(array, item){
+    let output = array.includes(item);
+    return output
+};
+
+objectArray(students_1, "Ahmad");
+objectArray(students_1, "Abdullah");
+
+// function takes an array and return all the objects inside that array and (,) between them.
+
+function joinArray(array){
+    let output = array.join()
+    return output;
+};
+
+joinArray(students_1);
