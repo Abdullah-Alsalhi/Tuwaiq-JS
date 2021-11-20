@@ -1,5 +1,6 @@
 # Tuwaiq-JS
-Tuwaiq-Academey course of JavaScript programming language.
+
+**Tuwaiq-Academey course of JavaScript programming language.**
 
 ## Table of branches/ lessons
 
