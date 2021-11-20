@@ -148,7 +148,7 @@ movie.changeMovieTitle("who am i?", "2:30 hours", "Drama");
 
 function forInObject(object){
     for (let item in object){
-        console.log(object[item]);
+    console.log(item, "=", object[item]);
     }
 };
 
