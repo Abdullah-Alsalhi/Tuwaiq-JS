@@ -75,7 +75,8 @@ for (let key in details){
 car = {
     type: "Mercedes",
     prize: 3766788,
-    km: 150
+    km: 150,
+    color: "white"
 };
 
 for (let value in car){
