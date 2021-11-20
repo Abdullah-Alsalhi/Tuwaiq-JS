@@ -20,3 +20,13 @@
 1. print each key using for in. [point 1]
 1. create an object with : car type, prize, traveling in KM, color.
 1. print each key using for in. [point 3]
+
+## Homework:
+
+**create the following functions and call each one three times:**
+
+1. function takes object, key and return the value of key.
+1. function takes object and new key and new value and returns object after adding new value using new key.
+1. function takes object and existed key and new value and return object after adding new value to existing key.
+1. function with name "changeMovieTitle" be inside an object consisting of (title, duration, movie type) and the function takes new movie name and returns the object after changing the title of movie.
+1. function takes an object and print all the keys and their value and "=" between them.

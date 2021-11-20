@@ -82,3 +82,80 @@ car = {
 for (let value in car){
     console.log(value, ":", car[value]);
 };
+
+// Homework
+// function takes object, key and return the value of key.
+
+function objectF(object, key){
+    return object[key];
+};
+
+Books = {
+    author: "Abdullah",
+    publishYear: 2021,
+    title: "Live your life as you want"
+};
+
+objectF(Books, "title");
+objectF(Books, "author");
+objectF(Books, "publishYear")
+
+// function takes object and new key and new value and returns object after adding new value using new key.
+
+function objectNewKey(object, newKey, newValue){
+    object[newKey] = newValue;
+    return object;
+};
+
+friend = {
+    fName: "Mohammed",
+    profession: "Journalist",
+};
+
+objectNewKey(friend, "age", 27);
+
+// function takes object and existed key and new value and return object after adding new value to existing key.
+
+function existKey(object, existedKey, newValue){
+    object[existedKey] = newValue;
+    return object;
+};
+
+city = {
+    name: "Riyadh",
+    region: "Saudi Arabia",
+    size: 2000000
+};
+
+existKey(city, "size", 2500000);
+
+// function with name "changeMovieTitle" be inside an object consisting of (title, duration, movie type)
+// and the function takes new movie name and returns the object after changing the title of movie.
+
+movie = {
+    title: "Exam",
+    duration: "2 Hours",
+    type: "Drama",
+    changeMovieTitle: function(title, duration, type){
+        this.title = title;
+        return movie;
+    }
+};
+
+movie.changeMovieTitle("who am i?", "2:30 hours", "Drama");
+
+// function takes an object and print all the keys and their value and "=" between them.
+
+function forInObject(object){
+    for (let item in object){
+        console.log(object[item]);
+    }
+};
+
+Human = {
+    name: "Ahmad",
+    age: 23,
+    profession: "DevOps Engineer"
+};
+
+forInObject(Human);
