@@ -143,11 +143,12 @@ includesCheck(students_HW, "Abdullah");
 // function takes an array consisting of numbers and returns the array after multiplying each element in 2.
 
 function multyItem(array){
+    let newArr = [];
     for (let i = 0; i < array.length; i++){
-        array[i] = array[i] * 2;
+        newArr.push(array[i] * 2);
     };
-    return array;
-}
+    return newArr;
+};
 
 numArray = [1, 3, 5, 7, 9];
 
