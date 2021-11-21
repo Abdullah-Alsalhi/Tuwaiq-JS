@@ -4,10 +4,10 @@
 
 ## Table of branches/ lessons
 
-| branch | week |   day    |    date    |            JavaScript            |
-| ------ | ---- | -------- |------------|----------------------------------|
-| Day-1  |   1  | Sunday   |  7-11-21   |Tuwaiq-Academy channel on YouTube |
-| Day-2  |   1  | Monday   |  8-11-21   |----------------------------------
+| branch | week |   day    |    date    |
+| ------ | ---- | -------- |------------|
+| Day-1  |   1  | Sunday   |  7-11-21   |
+| Day-2  |   1  | Monday   |  8-11-21   |
 | Day-3  |   1  | Tuesday  |  9-11-21   |
 | Day-4  |   1  | Wednesday|  10-11-21  |
 | Day-5  |   2  | Sunday   |  11-11-21  |
