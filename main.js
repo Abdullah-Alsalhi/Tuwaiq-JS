@@ -87,3 +87,59 @@ function lengthArray(array){
 };
 
 lengthArray(fruits);
+
+// Homework - function takes an array of numbers and print all numbers
+
+num_list = [3, 4, 7, 11, 18, 39];
+
+function printNum(array){
+    let output = array.forEach((item, index)=>{
+        console.log(item);
+    })
+};
+
+printNum(num_list);
+
+// function takes an array of numbers and and return new array of numbers which less than 10.
+
+function n_arr(array){
+    let output = array.filter((item, index)=>{
+        return item < 10;
+    });
+    return output;
+};
+
+n_arr(num_list);
+
+// function takes an array of numbers and return new array of previous array * 5.
+
+function num_5(array){
+    let output = array.map((item, index)=>{
+        return item * 5;
+    })
+    return output;
+};
+
+num_5(num_list);
+
+// function takes an array of numbers and return first number less or equal to 15.
+
+function first_num(array){
+    let output = array.find((item, index)=>{
+        return item <= 15;
+    })
+    return output;
+};
+
+first_num(num_list);
+
+// function takes an array of numbers and return new array consisting of each number square.
+
+function squareNum(array){
+    let output = array.map((item, index)=>{
+        return item ** 2;
+    })
+    return output;
+};
+
+squareNum(num_list);

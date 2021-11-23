@@ -16,3 +16,10 @@
 1. function takes an array of string and return first item has length of 4.
 
 ## Homework
+
+- **create the following functions and call them 3 times:**
+    1. function takes an array of numbers and print all numbers
+    1. function takes an array of numbers and and return new array of numbers which less than 10.
+    1. function takes an array of numbers and return new array of previous array * 5.
+    1. function takes an array of numbers and return first number less or equal to 15.
+    1. function takes an array of numbers and return new array consisting of each number square.
