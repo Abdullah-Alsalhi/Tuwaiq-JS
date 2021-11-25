@@ -1,0 +1,23 @@
+label{
+    color: red;
+    font-size: 15px;
+}
+
+p{
+    color: red;
+    font-size: small;
+}
+
+h1,h2,h3{
+    color: blue;
+    font-size: 150%;
+}
+
+h4,h5,h6{
+    color: green;
+}
+
+label{
+    color: orange;
+}
+
