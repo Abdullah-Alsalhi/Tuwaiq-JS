@@ -19,3 +19,16 @@
 - change h4-h6 to green.
 - change label to orange.
 - change font size.
+---
+## Homework:
+
+- create index_h.html and style_h.css
+    - create form in html
+    - form consist of these inputs [Email - Password]
+    - assign each input with label
+    - give placeholder to each input and type 
+    - submit button
+    - Link CSS file to html using link tag
+    - change p to blue
+    - change label color to green
+    - change font size  to be different for each label using id & class

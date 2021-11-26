@@ -1,0 +1,19 @@
+/* change p to blue */
+p {
+    color: blue;
+}
+
+/* change label color to green */
+label {
+    color: green;
+}
+
+/* change font size  to be different for each label using id & class */
+
+.Em {
+    font-size: large;
+}
+
+#passwd {
+    font-size: small;
+}
