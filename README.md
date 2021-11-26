@@ -16,4 +16,5 @@
 | Day-8  |   2  | Wednesday|  16-11-21  |
 | Day-9  |   3  | Sunday   |  21-11-21  |
 | Day-10 |   3  | Monday   |  22-11-21  |
-| Day-11 |   3  | Tuesday   |  23-11-21  |
+| Day-11 |   3  | Tuesday  |  23-11-21  |
+| Day-12 |   3  | Wednesday|  24-11-21  |
