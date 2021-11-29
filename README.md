@@ -34,4 +34,4 @@
 - change the color of tag 1 and tag 3
 - change the font-type of tag 2 and 4
 - change the font-size of tag 5 and 7
-- 
+- change background color of tag 6
