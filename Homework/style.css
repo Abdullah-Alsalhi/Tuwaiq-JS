@@ -1,0 +1,17 @@
+p{
+    color: yellowgreen;
+    font-size: larger;
+    font-weight: bold;
+}
+
+div{
+    color: rgb(20, 20, 19);
+}
+
+#login{
+    font-size: medium;
+    background-position: center;
+    backface-visibility: inherit;
+    background-color: khaki;
+}
+
