@@ -23,18 +23,21 @@
 1. by click on change font size button change the font size of parg1.
 1. by click on change Font family change the font type of parg1
 
-create index.html, style.css and main.js with the followings properties:
+## Homework
 
-link css file with html file.
-link js file with html file.
-create these tags in html file:
-input email
-input password
-button login
-p
-use different css selectors [id, class, element, universal, group]
-using css give color or font type or font size or background color for each element.
-in js file create the following array:
+**create index.html, style.css and main.js with the followings properties:**
+
+- link css file with html file.
+- link js file with html file.
+- create these tags in html file:
+    - input email
+    - input password
+    - button login
+    - p
+- use different css selectors [id, class, element, universal, group]
+- using css give color or font type or font size or background color for each element.
+- in js file create the following array:
+```javascript
 const users = [{
     user:"Moh",
     password: "1234",
@@ -43,6 +46,7 @@ const users = [{
     user:"Jouza",
     password:"5678",
 }]
-create function to verify user and password.
-if it is true, response p => Login Success and background-color green.
-if it is false, response p => Login Failed and background-color red.
+```
+- create function to verify user and password.
+- if it is true, response p => Login Success and background-color green.
+- if it is false, response p => Login Failed and background-color red.
