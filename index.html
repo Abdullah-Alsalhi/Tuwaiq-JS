@@ -10,13 +10,27 @@
 </head>
 
 <body>
-    <p>Live Coding</p>
+    <header><h1>Project XO</h1></header>
+    <p id="turn">Player Turn: <span id="turnSpan">X</span></p>
+    <p id="winner">WIN</p>
+    <div id="board">
+        <div class="cell" id="cell_0"></div>
+        <div class="cell" id="cell_1"></div>
+        <div class="cell" id="cell_2"></div>
+        <div class="cell" id="cell_3"></div>
+        <div class="cell" id="cell_4"></div>
+        <div class="cell" id="cell_5"></div>
+        <div class="cell" id="cell_6"></div>
+        <div class="cell" id="cell_7"></div>
+        <div class="cell" id="cell_8"></div>
+    </div>
+    <button id="restart">Play Again</button>
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
     </script>
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
