@@ -51,4 +51,4 @@ touch app.js
 
 
 **Get request**
-![Get data request](./image/gutRequest.png)
+![Get data request](./image/getRequest.png)
