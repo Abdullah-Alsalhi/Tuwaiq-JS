@@ -19,6 +19,8 @@ touch app.js
 - run the server using Node Js 
 - test the function post using postman
 
+**Post request**
 ![post data request](./image/Post.png)
 
+**Get request**
 ![get data request](./image/get.png)
