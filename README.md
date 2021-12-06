@@ -43,3 +43,18 @@ app.listen(3000, ()=>{
 	console.log("Server is working")
 });
 ```
+## Homework
+
+###### *Create app.js and revise these followings requests:*
+
+1. ~~Install Node JS and verify if it's downloaded~~
+1. ~~try javascript code in Command Line Interface~~
+1. ~~Install Express and verify~~
+1. write main commands to make express server.
+1. create get function on /test7 and make the response be "Response from GET"
+1. create listen function
+1. run this server using Node JS
+1. try get function using google chrome
+
+*GET response*
+![NodeJS server running on localhost:3000](./Homework/image/NodeJs.png)
