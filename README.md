@@ -19,8 +19,36 @@ touch app.js
 - run the server using Node Js 
 - test the function post using postman
 
+
 **Post request**
 ![post data request](./image/Post.png)
 
+
 **Get request**
 ![get data request](./image/get.png)
+
+*Do the followings:*
+
+- ~~Install Express JS and verify and install nodemon~~
+- ~~create javascript file called app.js~~
+- ~~write the basic commands to make a server using express~~
+- create put function
+- create delete function
+- run the server using Node JS
+- test the functions of put and delete using postman
+
+
+**Put request**
+![put data request](./image/putReq.png)
+
+
+**Get request**
+![get data request](./image/getReq.png)
+
+
+**Delete request**
+![delete data request](./image/deleteReq.png)
+
+
+**Get request**
+![Get data request](./image/gutRequest.png)
