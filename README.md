@@ -52,3 +52,59 @@ touch app.js
 
 **Get request**
 ![Get data request](./image/getRequest.png)
+
+## Homework
+
+*create app.js and do the followings:*
+
+- Install express and make sure it is installed and nodemon.
+- Create javascript file called app.js
+- Write the main commands to make server using express.
+- Create get function returns all the data in an array.
+- Create post function to add new element using body.
+- Create put function to edit an element using params and body
+- Create delete function to delete an element (*last element*)
+- Create listen function
+- Run the server using Node Js || nodemon
+- Test all the functions using postman.
+
+### **Get all**
+
+
+![get function](./Homework/images/get.png)
+
+
+### **Post**
+
+
+![post function](./Homework/images/post.png)
+
+
+### **Get all**
+
+
+![get function](./Homework/images/getpost.png)
+
+
+### **Delete all**
+
+
+![delete function](./Homework/images/delete.png)
+
+
+### **Get all**
+
+
+![get function](./Homework/images/getdelete.png)
+
+
+### **Put all**
+
+
+![put function](./Homework/images/put.png)
+
+
+### **Get all**
+
+
+![get function](./Homework/images/getput.png)
