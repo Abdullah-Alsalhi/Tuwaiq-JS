@@ -1,13 +1,12 @@
 {
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.15" 
+    "mongoose": "^6.0.15"
   },
   "name": "tuwaiq-js",
   "description": "**Tuwaiq-Academey course of JavaScript programming language.**",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js"
