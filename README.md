@@ -33,3 +33,25 @@ _Do the followings:_
 
 
 ![Database Query](./images/GetData.png)
+
+---
+
+## Homework
+
+- ~~Install Mongodb and make sure it's installed successfully~~
+- Create javascript files; app.js and db.js
+- Write the main commands to make server using express.
+- Run the server using Node JS and nodemon.
+- Write the programming code to establish a connection to MongoDB.
+- Create post function returns "Created new user Successfully".
+- Create get function returns all the data in the database.
+
+
+#### Post response
+
+![post request](./Homework/images/postResponse.png)
+
+
+#### Get response
+
+![get request](./Homework/images/getResponse.png)
