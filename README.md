@@ -22,3 +22,9 @@ _Do the followings:_
 - Create post function that returns 'Created new user Successfully'.
 - Create get function that returns the data stored in DB.
 - Run the server using Node JS.
+
+
+## Query Data from database:
+
+
+![Database Query](./images/PostData.png)

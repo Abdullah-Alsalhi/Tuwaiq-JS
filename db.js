@@ -5,7 +5,7 @@ const db = mongoose.connection;
 mongoose.connect(
   mongoURI,
 	{
-		userNewUrlParser: true, useUnifiedTopology: true
+		// userNewUrlParser: true, useUnifiedTopology: true
 	},
 	()=>{
 		console.log("The connection is established");

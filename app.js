@@ -7,9 +7,9 @@ const port = 3001;
 app.use(express.json());
 
 console.log(User);
-data = {fName: "Abdullah", favFood: "Pizza"}
+// data = {fName: "Abdullah", favFood: "Pizza"}
 app.post('/insert', (req, res)=>{
-	User.create(data, (err, newData)=>{
+	User.create({fName: "Abdullah", favFood: "Pizza"}, (err, newData)=>{
 		if (err){
 			return handleError(err);
 		}
