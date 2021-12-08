@@ -33,4 +33,3 @@ _Do the followings:_
 
 
 ![Database Query](./images/GetData.png)
-]
