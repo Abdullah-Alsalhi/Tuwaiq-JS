@@ -25,3 +25,4 @@
 | Day-17 |   5  | Sunday   |  5-12 -21  |
 | Day-18 |   5  | Monday   |  6-12 -21  |
 | Day-19 |   5  | Tuesday  |  7-12 -21  |
+| Day-20 |   5  | Wednesday|  8-12 -21  |
