@@ -9,7 +9,8 @@ app.use(express.json());
 console.log(User);
 // data = {fName: "Abdullah", favFood: "Pizza"}
 app.post('/insert', (req, res)=>{
-	User.create({fName: "Abdullah", favFood: "Pizza"}, (err, newData)=>{
+	User.create(/*{fName: "Abdullah", favFood: "Pizza"},*/
+	{fName: "Madini", favFood: "meat"},	(err, newData)=>{
 		if (err){
 			return handleError(err);
 		}
@@ -17,7 +18,14 @@ app.post('/insert', (req, res)=>{
 	})
 })
 
-
+app.get('/data', (req, res)=>{
+	User.find({}, (err, users)=>{ // user is a parameter
+		if (err) {
+			return handleError(err);
+		}
+		console.log("Get", users)
+	})
+});
 
 app.listen(port, ()=>{
   console.log("Server is running on", port);

@@ -25,6 +25,12 @@ _Do the followings:_
 
 
 ## Query Data from database:
-
+**post request**
 
 ![Database Query](./images/PostData.png)
+
+**get request**
+
+
+![Database Query](./images/GetData.png)
+]
