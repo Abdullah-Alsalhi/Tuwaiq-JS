@@ -17,7 +17,7 @@ _Do the followings:_
 
 _Do the followings:_
 
-- Link db.js with app.js and create listen function.
+- ~~Link db.js with app.js and create listen function.~~
 - Create Schema User within fName and favFood.
 - Create post function that returns 'Created new user Successfully'.
 - Create get function that returns the data stored in DB.
