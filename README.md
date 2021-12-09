@@ -45,6 +45,8 @@ _Do the followings:_
 - Write the programming code to establish a connection to MongoDB.
 - Create post function returns "Created new user Successfully".
 - Create get function returns all the data in the database.
+- additional: create delete function returns "Deleted last user Successfully"
+- additional: create put function returns "Updated one user successfully"
 
 
 #### Post response
@@ -55,3 +57,13 @@ _Do the followings:_
 #### Get response
 
 ![get request](./Homework/images/getResponse.png)
+
+
+#### Get response
+
+![delete request](./Homework/images/deleteResponse.png)
+
+
+#### put response
+
+![put request](./Homework/images/putResponse.png)
