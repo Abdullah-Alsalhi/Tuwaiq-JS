@@ -65,7 +65,7 @@ npm i express mongoose
 ![delete request](./images/deleteResponseSuccess.png)
 
 
-### delete request
+### put request [*inserting data not found previously*]
 
 
 ![delete request](./images/deleteResponse.png)
