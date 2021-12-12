@@ -83,11 +83,36 @@ npm i express mongoose
 
 ***Do the followings with databases***
 
-""""""""1. create package.json and download express and mongoose.
+1. create package.json and download express and mongoose.
 1. create app.js and db.js and make the connection of them.
 1. code the main commands of mongoose and express.
 1. create Schema with name {Users} consisting of fName, favFood and age.
 1. create post function returns "Create new user successfully".
-1. create get function returns All the data.""""""""
+1. create get function returns All the data.
 1. create delete function returns "deleted last user successfully"
 1. create put function returns "updated user successfully"
+
+
+## post response
+
+![post res](./Homework/images/postRequest.png)
+
+
+## get response
+
+![get res](./Homework/images/getRequest.png)
+
+
+## put response
+
+![put res](./Homework/images/putReq.png)
+
+
+## delete response not found
+
+![delete res](./Homework/images/yasserNotFound.png)
+
+
+## delete response successfully
+
+![delete res](./Homework/images/Sara.png)

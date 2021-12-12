@@ -29,6 +29,39 @@ app.get("/data", (req, res) => {
   });
 });
 
+app.put("/edit/:oldName", (req, res) => {
+  User.updateOne(
+    { fName: req.params.oldName },
+    { fName: req.body.newName },
+    (err, updatedObj) => {
+      if (err) {
+        return handleError(err);
+      } else {
+        if (updatedObj.matchedCount === 0) {
+          res.status(404).json("Not found");
+        } else {
+          res.status(200).json("SUCCESSFULLY EDITED");
+        }
+      }
+    }
+  );
+});
+
+app.delete("/delete/:fName", (req, res) => {
+  User.deleteOne({ fName: req.params.fName }, (err, deletedObj) => {
+    if (err) {
+      return handleError(err);
+    } else {
+      if (deletedObj.deletedCount === 0) {
+        console.log(deletedObj);
+        res.status(404).json(req.params.fName + " Not found");
+      } else {
+        res.status(200).json(req.params.fName + " deleted successfully");
+      }
+    }
+  });
+});
+
 app.listen(port, () => {
   console.log("SERVER LISTENING ON", port);
 });
