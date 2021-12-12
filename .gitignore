@@ -1,3 +1,2 @@
-./Homework/node_modules
 ./node_modules
-./.gitignore
+./Homework/node_modules
