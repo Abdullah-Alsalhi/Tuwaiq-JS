@@ -2,20 +2,27 @@
 
 **Tuwaiq-Academey course of JavaScript programming language.**
 
-## Introduction to ReactJs
+## React State
 
-1. create component with name Card.
-1. Inside App.js use it 3 times.
-1. pass props of obj: {title, img, color}
-1. make the program dynamic.
-1. use these props inside Card
+*Do the followings:*
 
-## React props
+1. create component LinkesCount.js
+1. use this component in App.js
+1. create state inside this component and with initial state = 5
+1. add up button and down button 
+1. up : --> increase likes + 1
+1. down : --> decrease likes -1
+```javascript
+      <button onClick={incCount}>UP</button>
+      <button onClick={decCount}>DOWN</button>
+```
+```javascript
+const [count, setCount] = useState(5);
+  const incCount = () => {
+    setCount(count + 1);
+  };
 
-*Do the following using map and array of objects:*
-
-1. Create component Card_2
-1. insdie App.js use it 3 times.
-1. pass different props to it of object consisting of img, color and title.
-1. Write the programming code to make it dynamic
-1. Use these props inside Card_2
+  const decCount = () => {
+    setCount(count - 1);
+  };
+```
