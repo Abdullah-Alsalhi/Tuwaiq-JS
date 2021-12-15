@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function About() {
-  const whoAmI = { fName: "I am Abdullah", Info: "I am DevOps and full-Stack Web Developer"}
+  const whoAmI = { fName: "I am Abdullah", Info: "فقلت استغفروا ربكم إنه كان غفارا "}
   return (
     <div className='About'>
       <p>

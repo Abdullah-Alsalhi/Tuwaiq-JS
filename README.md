@@ -26,3 +26,14 @@ const [count, setCount] = useState(5);
     setCount(count - 1);
   };
 ```
+
+## Homework:
+
+1. create Login component
+1. use this component inside App.js and create an array of users to pass them as props to Login.
+1. Create state inside this component , email and password with initial values "".
+1. save the values of input to state.
+1. create Login button : --> check if the inputs of user are correct or not 
+1. create register button : --> to recreate new document
+1. additional: --> show success message with green color || failed message and red color
+1. additional: --> add button change from Login and Register
