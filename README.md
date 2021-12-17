@@ -2,27 +2,26 @@
 
 **Tuwaiq-Academey course of JavaScript programming language.**
 
-## React State
+## React API
 
-*Do the followings:*
+***Do the followings:***
 
-1. create component LinkesCount.js
-1. use this component in App.js
-1. create state inside this component and with initial state = 5
-1. add up button and down button 
-1. up : --> increase likes + 1
-1. down : --> decrease likes -1
+1. create get function to send GET request to api
 ```javascript
-      <button onClick={incCount}>UP</button>
-      <button onClick={decCount}>DOWN</button>
+const getData = () => {
+    axios.get(`https://jsonplaceholder.typicode.com/todos`).then((response) => {
+      setTask(response.data);
+      // console.log(response.data);
+    });
+  };
 ```
+2. Get All button to send GET request to api change on state with name tasks.
+3. create Todo component and use it in App.js
+4. pass tasks array as props to Todo.
+5. show these data in Todo
+6. additional : instead of using button use useEffect function.
 ```javascript
-const [count, setCount] = useState(5);
-  const incCount = () => {
-    setCount(count + 1);
-  };
-
-  const decCount = () => {
-    setCount(count - 1);
-  };
+useEffect(() => { // when the page rendered this function will call getData() directly
+    getData();
+  }, []);
 ```

@@ -1,31 +1,15 @@
 .App {
+  background-color: #EEE;
   text-align: center; 
   align-content: center;
+  border: solid rgb(109, 92, 92);
+  /* height: 300px; */
+  width: 300px;
+  margin-left: 250px;
 }
 
-.Contact, .About  {
-  color: rgb(7, 33, 180);
-  font-size: 20px;
-  background-color: cyan;
-  border: rgb(97, 80, 80) solid;
-  width: 500px;
-  height:200px;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-#image  {
-  
-  width: 50px;
-	height: 50px;
-	border-radius: 50%;
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: white;
-  text-align: center;
-  
-}
-.image{
-  width: 50px;
-  height:50px;
+.title {
+  font-size: bold;
+  background-color: antiquewhite;
+  color: rgb(69, 75, 55);
 }
