@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "tuwaiq-js",
+  "description": "**Tuwaiq-Academey course of JavaScript programming language.**",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdullah-Alsalhi/Tuwaiq-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdullah-Alsalhi/Tuwaiq-JS/issues"
+  },
+  "homepage": "https://github.com/Abdullah-Alsalhi/Tuwaiq-JS#readme"
+}
