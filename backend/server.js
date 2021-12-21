@@ -29,6 +29,18 @@ app.post("/insert", (req, res) => {
   );
 });
 
+app.delete("/remove", (req, res) => {
+  Todo.remove({ _id: req.body._id }, (err) => {
+    if (err) {
+      return handleError(err);
+    } else {
+      res.json("Deleted One Todo Successfully");
+    }
+  });
+});
+
+app.put()
+
 app.listen(port, () => {
   console.log("SERVER IS LISTENING TO", port);
 });
