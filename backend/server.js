@@ -46,21 +46,8 @@ app.delete("/tasks/:id", (req, res) => {
   });
 });
 
-
-
-//                    /?key=value&key=value
-app.get("/tasks/filter", (req, res) => {
-  Todo.find({isCompleted: req.query.isCompleted}, (err, data) => {
-    if (err) {
-      return handleError(err);
-    } else {
-      res.status(200).json(data);
-    }
-  });
-});
-
 // this to edit on data
-/*app.put("/tasks/:id", (req, res) => {
+app.put("/tasks/:id", (req, res) => {
   Todo.updateOne(
     { _id: req.params.id },
     { title: req.body.newTitle },
@@ -78,6 +65,18 @@ app.get("/tasks/filter", (req, res) => {
   );
 });
 
+//                    /?key=value&key=value
+app.get("/tasks/filter", (req, res) => {
+  Todo.find({ isCompleted: req.query.isCompleted }, (err, data) => {
+    if (err) {
+      return handleError(err);
+    } else {
+      res.status(200).json(data);
+    }
+  });
+});
+
+/*
 // this returns tasks completed
 app.get("/completedTasks", (req, res) => {
   Todo.find({isCompleted: true}, (err, data) => {
@@ -99,6 +98,38 @@ app.get("/notCompletedTasks", (req, res) => {
     }
   });
 });*/
+
+app.delete("/tasks", (req, res) => {
+  Todo.deleteMany({ isCompleted: true }, (err, deletedObj) => {
+    if (err) {
+      return handleError(err);
+    } else {
+      if (deletedObj.deletedCount === 0) {
+        res.status(404).json("NO COMPLETED TASKS FOUND");
+      } else {
+        res.status(201).json("DELETED COMPLETED TASKS SUCCESSFULLY");
+      }
+    }
+  });
+});
+
+app.put("/tasks/:id/:isCompleted", (req, res) => {
+  Todo.updateOne(
+    { _id: req.params.id },
+    { isCompleted: req.params.isCompleted },
+    (err, updatedObj) => {
+      if (err) {
+        return handleError(err);
+      } else {
+        if (updatedObj.matchedCount === 0) {
+          res.status(404).json("Not Found");
+        } else {
+          res.status(200).json("updated status successfully");
+        }
+      }
+    }
+  );
+});
 
 app.listen(port, () => {
   console.log("SERVER IS LISTENING TO", port);

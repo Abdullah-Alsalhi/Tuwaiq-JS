@@ -26,3 +26,5 @@ npm i express mongoose
 
 - create get function returns tasks completed.
 - create get function returns tasks not completed.
+- create delete function deletes all the tasks completed.
+- create put function update the task status (true || false).
