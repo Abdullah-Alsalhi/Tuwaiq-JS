@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import Todo from "./components/Todo";
@@ -11,10 +11,12 @@ function App() {
       console.log(response.data);
     });
   };
-
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <div className="App">
-      <button onClick={getData}>Get Tasks</button>
+      {/* <button onClick={getData}>Get Tasks</button> */}
       {task.map((task, i) => (
         <Todo key={i} title={task.title} completed={task.isCompleted} />
       ))}

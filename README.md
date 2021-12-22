@@ -39,3 +39,4 @@ npx create-react-app frontend
 - create Todo component 
 - create Tasks State 
 - create button GET TASKS to fetch data from Backend
+- instead of using button , use useEffect 
