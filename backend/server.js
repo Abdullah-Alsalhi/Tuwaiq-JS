@@ -1,10 +1,13 @@
 const express = require("express");
+const cors = require('cors');
 const db = require("./db");
 const Todo = require("./models/Todo");
 const app = express();
-const port = 3000;
+const port = 3001;
+
 
 app.use(express.json()); // must to read post request
+app.use(cors()) // to prevent from cors plicy
 
 // this to represent data
 app.get("/tasks", (req, res) => {
