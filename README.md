@@ -6,6 +6,7 @@
 
 *Requirement*
 
+## Day 1
 - initiate package.json and install express & mongoose
 ```bash
 npm init
@@ -20,3 +21,8 @@ npm i express mongoose
 - create put function returns "Updated One Todo Successfully".
 - initiate additional endpoint ***get, post, delete and put*** do different operations.
 - run the server using nodemon and postman.
+
+## Day 2
+
+- create get function returns tasks completed.
+- create get function returns tasks not completed.
