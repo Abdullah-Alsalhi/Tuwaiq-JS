@@ -30,3 +30,12 @@ npm i express mongoose
 - ~~create put function update the task status (true || false).~~
 
 ## Day 3
+
+- create frontend folder using react
+```shell
+npx create-react-app frontend
+```
+- change the code in App.js.
+- create Todo component 
+- create Tasks State 
+- create button GET TASKS to fetch data from Backend
