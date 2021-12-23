@@ -2,3 +2,10 @@
   border: solid red 5px;
 }
 
+.Todo {
+  border: solid blue 3px;
+}
+
+.Add {
+  border: solid greenyellow 3px;
+}

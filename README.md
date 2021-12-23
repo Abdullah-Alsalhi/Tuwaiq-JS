@@ -40,3 +40,6 @@ npx create-react-app frontend
 - create Tasks State 
 - create button GET TASKS to fetch data from Backend
 - instead of using button , use useEffect 
+- show Tasks data in Todo.
+- add button to delete Todo.
+- show isCompleted data as checkbox input and Horizontal line on Title.
