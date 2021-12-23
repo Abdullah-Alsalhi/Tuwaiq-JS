@@ -32,7 +32,7 @@ function App() {
   });
   return (
     <div className="App">
-      <h1>{dataMap}</h1>
+      <p>{dataMap}</p>
       <Add creatTaskFunction={postNewTask} />
     </div>
   );

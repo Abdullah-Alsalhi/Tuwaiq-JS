@@ -1,5 +1,10 @@
 .App {
+  text-align: center;
   border: solid red 5px;
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+  margin:auto;
 }
 
 .Todo {
