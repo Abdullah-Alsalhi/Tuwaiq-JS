@@ -5,9 +5,8 @@ const Todo = require("./models/Todo");
 const app = express();
 const port = 3001;
 
-
 app.use(express.json()); // must to read post request
-app.use(cors()) // to prevent from cors plicy
+app.use(cors()) // to prevent from cors policy
 
 // this to represent data
 app.get("/tasks", (req, res) => {

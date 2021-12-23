@@ -31,14 +31,22 @@ npm i express mongoose
 
 ## Day 3
 
-- create frontend folder using react
+- create frontend folder using react~~
 ```shell
 npx create-react-app frontend
 ```
-- change the code in App.js.
-- create Todo component 
-- create Tasks State 
-- create button GET TASKS to fetch data from Backend
-- instead of using button , use useEffect 
-- show Tasks data in Todo.
-- show isCompleted data as checkbox input and Horizontal line on Title.
+- ~~change the code in App.js.~~
+- ~~create Todo component ~~
+- ~~create Tasks State ~~
+- ~~create button GET TASKS to fetch data from Backend~~
+- ~~instead of using button , use useEffect ~~
+- ~~show Tasks data in Todo.~~
+- ~~show isCompleted data as checkbox input and Horizontal line on Title.~~
+
+
+## Day -4
+
+- Add delete button.
+- when click on delete button delete chosen todo.
+- HINT: the button should be able call function in App.js from Todo.
+- should use axios on delete endpoint /tasks/:id
