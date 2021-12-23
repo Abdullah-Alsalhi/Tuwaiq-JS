@@ -28,7 +28,7 @@ function App() {
   };
   // {/* <button onClick={getData}>Get Tasks</button> */}
   const dataMap = tasks.map((task, i) => {
-    return <Todo key={i} title={task.title} completed={task.isCompleted} />
+    return <Todo key={i} title={task.title} completed={task.isCompleted} /> 
   });
   return (
     <div className="App">

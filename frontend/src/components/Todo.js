@@ -9,6 +9,7 @@ export default function Todo(props) {
         <strong><span className="taskStatus" style={{textDecoration: props.completed? "line-through": "none"}}>{props.title}</span></strong>
       </h1>
       <h2>{props.completed === true? "Done": "Pending"}</h2>
+      
     </div>
   );
 }
