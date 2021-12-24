@@ -28,8 +28,8 @@ export default function Todo(props) {
           </span>
         </strong>
       </p>
-      <h2>{isCompleted === true ? "Done" : "Pending"}</h2>
-      <button
+      {/* <h2 className="STATUS">{isCompleted === true ? "Done" : "Pending"}</h2> */}
+      <button className="DELETE"
         onClick={() => {
           console.log("Todo.js", _id);
           props.deleteTodo(_id);

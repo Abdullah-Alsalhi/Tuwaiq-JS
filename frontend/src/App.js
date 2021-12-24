@@ -7,6 +7,21 @@ import Add from "./components/Add";
 function App() {
   const [tasks, setTask] = useState([]);
 
+  
+
+  const deleteAll=()=>{
+    axios
+      .delete(`http://localhost:3001/alltasks`)
+      .then((response) => {
+        // setTask(response.data);
+        // console.log(response.data);
+        getData();
+      })
+      .catch((err) => {
+        console.log("Error", err);
+      });
+  }
+
   const editTodoStatus = (id, Status) => {
     axios
     .put(`http://localhost:3001/tasks/${id}/${Status}`)
@@ -45,6 +60,8 @@ function App() {
     getData();
   }, []);
 
+    
+
   const dataMap = tasks.map((taskObj, i) => {
     return (
       <Todo
@@ -73,12 +90,16 @@ function App() {
     /* <button onClick={getData}>Get Tasks</button> */
   }
 
-
+  
 
   return (
     <div className="App">
       <p>{dataMap}</p>
       <Add creatTaskFunction={postNewTask} />
+      <button className="Delete-All" onClick={()=>{
+        console.log("deleteAllFunction")
+        deleteAll()
+      }}>Delete All</button>
     </div>
   );
 }

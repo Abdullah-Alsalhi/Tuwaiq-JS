@@ -115,6 +115,21 @@ app.delete("/tasks", (req, res) => {
   });
 });
 
+app.delete("/alltasks", (req, res) => {
+  Todo.deleteMany({}, (err,deletedObj) => {
+    if (err) {
+      return handleError(err);
+    } else {
+      if (deletedObj.deletedCount === 0) {
+        res.status(404).json("NO TASKS FOUND");
+      } else {
+        res.status(201).json("DELETED TASKS SUCCESSFULLY");
+      }
+    }
+  });
+});
+
+
 app.put("/tasks/:id/:isCompleted", (req, res) => {
   Todo.updateOne(
     { _id: req.params.id },

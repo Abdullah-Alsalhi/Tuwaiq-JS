@@ -3,14 +3,20 @@
   border: solid red 5px;
   height: fit-content;
   width: fit-content;
-  overflow: hidden;
-  margin:auto;
+  margin: auto;
 }
 
 .Todo {
   border: solid blue 3px;
+  display: block;
 }
 
 .Add {
   border: solid greenyellow 3px;
+  display: inline-block;
+}
+
+.STATUS, .DELETE{
+  display: inline-block;
+  margin-left: 12px;
 }

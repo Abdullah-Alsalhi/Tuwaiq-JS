@@ -54,3 +54,11 @@ npx create-react-app frontend
 - when click on the button send edit to chosen Todo
 - HINT: the button should be able to call function in App.js from Todo.
 - should use axios on endPoint put --> tasks/:id
+
+- enhance the design using css
+- add delete button <delete all>
+- when click on <delete all> we send request to backend to delete all the tasks.
+- add button <get finished> 
+- when click on <get finished> we send request to backend to get all finished todo.
+- add <get pending> button 
+- when click on <get pending> we send request to backend to get all unfinished todo.
