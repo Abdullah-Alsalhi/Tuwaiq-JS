@@ -8,7 +8,7 @@ export default function Todo(props) {
         <input
           type="checkbox"
           defaultChecked={isCompleted}
-          onClick={() => {
+          onClick={() => { // note: you can ignore if else conditions by passing !isCompleted to pass opposite of status
             if (isCompleted === false) {
               props.editTodoStatus(_id, true);
             } else {
