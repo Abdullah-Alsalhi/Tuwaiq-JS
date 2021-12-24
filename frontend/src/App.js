@@ -4,12 +4,25 @@ import axios from "axios";
 import Todo from "./components/Todo";
 import Add from "./components/Add";
 
-
 function App() {
   const [tasks, setTask] = useState([]);
 
+  const editTodoStatus = (id, Status) => {
+    axios
+    .put(`http://localhost:3001/tasks/${id}/${Status}`)
+    .then((response) => {
+      // setTask(response.data);
+      // console.log(response.data);
+      getData();
+    })
+    .catch((err) => {
+      console.log("Error", err);
+    });
+    // console.log("editTodoStatus App.js");
+  };
+
   const deleteTodo = (id) => {
-    console.log(id)
+    console.log(id);
     axios
       .delete(`http://localhost:3001/tasks/${id}`)
       .then((response) => {
@@ -21,7 +34,6 @@ function App() {
         console.log("Error", err);
       });
   };
-
 
   const getData = () => {
     axios.get(`http://localhost:3001/tasks`).then((response) => {
@@ -37,13 +49,12 @@ function App() {
     return (
       <Todo
         key={i}
-        task = {taskObj}
+        task={taskObj}
         deleteTodo={deleteTodo}
+        editTodoStatus={editTodoStatus}
       />
     );
   });
-
-  
 
   const postNewTask = (body) => {
     axios
@@ -58,21 +69,18 @@ function App() {
       });
   };
 
+  {
+    /* <button onClick={getData}>Get Tasks</button> */
+  }
 
-    {/* <button onClick={getData}>Get Tasks</button> */}
-
-
-    
-  
 
 
   return (
-    
     <div className="App">
       <p>{dataMap}</p>
       <Add creatTaskFunction={postNewTask} />
     </div>
   );
-};
+}
 
 export default App;

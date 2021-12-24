@@ -50,3 +50,7 @@ npx create-react-app frontend
 - when click on delete button delete chosen todo.
 - HINT: the button should be able call function in App.js from Todo.
 - should use axios on delete endpoint /tasks/:id
+- add checkbox input button 
+- when click on the button send edit to chosen Todo
+- HINT: the button should be able to call function in App.js from Todo.
+- should use axios on endPoint put --> tasks/:id
