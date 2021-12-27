@@ -31,7 +31,7 @@ npm i express mongoose
 
 ## Day 3
 
-- create frontend folder using react~~
+- ~~create frontend folder using react~~
 ```shell
 npx create-react-app frontend
 ```
@@ -46,7 +46,7 @@ npx create-react-app frontend
 
 ## Day -4
 
-- ~~Add delete button.
+- ~~Add delete button.~~
 - ~~when click on delete button delete chosen todo.~~
 - ~~HINT: the button should be able call function in App.js from Todo.~~
 - ~~should use axios on delete endpoint /tasks/:id~~
@@ -58,9 +58,9 @@ npx create-react-app frontend
 - ~~enhance the design using css~~
 - ~~add delete button <delete all>~~
 - ~~when click on <delete all> we send request to backend to delete all the tasks.~~
-- ~~add button <get finished> ~~
+- ~~add button <get finished>~~
 - ~~when click on <get finished> we send request to backend to get all finished todo.~~
-- ~~add <get pending> button ~~
+- ~~add <get pending> button~~
 - ~~when click on <get pending> we send request to backend to get all unfinished todo.~~
 
 
