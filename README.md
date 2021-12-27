@@ -36,29 +36,35 @@ npm i express mongoose
 npx create-react-app frontend
 ```
 - ~~change the code in App.js.~~
-- ~~create Todo component ~~
-- ~~create Tasks State ~~
+- ~~create Todo component~~
+- ~~create Tasks State~~
 - ~~create button GET TASKS to fetch data from Backend~~
-- ~~instead of using button , use useEffect ~~
+- ~~instead of using button , use useEffect~~
 - ~~show Tasks data in Todo.~~
 - ~~show isCompleted data as checkbox input and Horizontal line on Title.~~
 
 
 ## Day -4
 
-- Add delete button.
-- when click on delete button delete chosen todo.
-- HINT: the button should be able call function in App.js from Todo.
-- should use axios on delete endpoint /tasks/:id
-- add checkbox input button 
-- when click on the button send edit to chosen Todo
-- HINT: the button should be able to call function in App.js from Todo.
-- should use axios on endPoint put --> tasks/:id
+- ~~Add delete button.
+- ~~when click on delete button delete chosen todo.~~
+- ~~HINT: the button should be able call function in App.js from Todo.~~
+- ~~should use axios on delete endpoint /tasks/:id~~
+- ~~add checkbox input button ~~
+- ~~when click on the button send edit to chosen Todo~~
+- ~~HINT: the button should be able to call function in App.js from Todo.~~
+- ~~should use axios on endPoint put --> tasks/:id~~
 
-- enhance the design using css
-- add delete button <delete all>
-- when click on <delete all> we send request to backend to delete all the tasks.
-- add button <get finished> 
-- when click on <get finished> we send request to backend to get all finished todo.
-- add <get pending> button 
-- when click on <get pending> we send request to backend to get all unfinished todo.
+- ~~enhance the design using css~~
+- ~~add delete button <delete all>~~
+- ~~when click on <delete all> we send request to backend to delete all the tasks.~~
+- ~~add button <get finished> ~~
+- ~~when click on <get finished> we send request to backend to get all finished todo.~~
+- ~~add <get pending> button ~~
+- ~~when click on <get pending> we send request to backend to get all unfinished todo.~~
+
+
+## Second Week
+
+## Day 1
+

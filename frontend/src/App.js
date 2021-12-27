@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import Todo from "./components/Todo";
 import Add from "./components/Add";
+import Register from "./components/Register";
 
 function App() {
   const [tasks, setTask] = useState([]);
@@ -89,12 +90,13 @@ function App() {
       });
   };
 
-  {
+  
     /* <button onClick={getData}>Get Tasks</button> */
-  }
+
 
   return (
     <div className="App">
+      <Register/>
       <p>{dataMap}</p>
       <Add creatTaskFunction={postNewTask} />
       <button

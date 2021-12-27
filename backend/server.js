@@ -1,12 +1,48 @@
 const express = require("express");
-const cors = require('cors');
+const cors = require("cors");
 const db = require("./db");
 const Todo = require("./models/Todo");
+const User = require("./models/User");
 const app = express();
 const port = 3001;
 
 app.use(express.json()); // must to read post request
-app.use(cors()) // to prevent from cors policy
+app.use(cors()); // to prevent from cors policy
+
+app.post("/user/register", (req, res) => {
+  User.create(req.body, (err, dataInserted) => {
+    if (err) {
+      // return handleError(err);
+      res.status(400).json("Email already taken");
+      console.log("Email already taken");
+    } else {
+      res.status(201).json(dataInserted);
+    }
+  });
+});
+
+app.post("/user/login", (req, res) => {
+  User.find({ email: req.body.email }, (err, data) => {
+    if (err) {
+      return handleError(err);
+    } else {
+      if (data.length === 1) {
+        if (req.body.password === data[0].password) {
+          res
+            .status(200)
+            .json({
+              message: "Login Successfully",
+              username: data[0].username,
+            });
+        } else {
+          res.status(400).json({ message: "Wrong Password" });
+        }
+      } else {
+        res.status(404).json({ message: "Email entered is not registered" });
+      }
+    }
+  });
+});
 
 // this to represent data
 app.get("/tasks", (req, res) => {
@@ -116,7 +152,7 @@ app.delete("/tasks", (req, res) => {
 });
 
 app.delete("/alltasks", (req, res) => {
-  Todo.deleteMany({}, (err,deletedObj) => {
+  Todo.deleteMany({}, (err, deletedObj) => {
     if (err) {
       return handleError(err);
     } else {
@@ -128,7 +164,6 @@ app.delete("/alltasks", (req, res) => {
     }
   });
 });
-
 
 app.put("/tasks/:id/:isCompleted", (req, res) => {
   Todo.updateOne(
