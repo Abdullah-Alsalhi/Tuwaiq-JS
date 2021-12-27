@@ -4,6 +4,7 @@ import axios from "axios";
 import Todo from "./components/Todo";
 import Add from "./components/Add";
 import Register from "./components/Register";
+import Login from "./components/Login";
 
 function App() {
   const [tasks, setTask] = useState([]);
@@ -96,6 +97,8 @@ function App() {
 
   return (
     <div className="App">
+      <Login/>
+      <br/>
       <Register/>
       <p>{dataMap}</p>
       <Add creatTaskFunction={postNewTask} />

@@ -34,11 +34,17 @@ app.post("/user/login", (req, res) => {
               message: "Login Successfully",
               username: data[0].username,
             });
+            console.log("login Success");
         } else {
           res.status(400).json({ message: "Wrong Password" });
+          console.log("Wrong password");
+
         }
       } else {
         res.status(404).json({ message: "Email entered is not registered" });
+        console.log("Email entered is not registered");
+         console.log(data);
+
       }
     }
   });

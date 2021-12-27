@@ -57,8 +57,10 @@ export default function Register(props) {
             setPassword(e.target.value);
           }}
         ></input>
+        <br/>
         <input
           type="submit"
+          value='Register'
           onClick={(e) => {
             e.preventDefault();
             registerPost(body);
