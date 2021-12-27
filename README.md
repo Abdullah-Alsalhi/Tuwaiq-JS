@@ -68,3 +68,15 @@ npx create-react-app frontend
 
 ## Day 1
 
+*Do the followings*
+
+1. create Schema Users consisting of email,password,username.
+1. create post function returns Created New User Successfully for Register.
+1. create post function return return login for Login.
+1. create Register component for react.
+1. create State with username,email,password
+1. create Register button to send post request to backend.
+1. create Login component
+1. create State with username,email
+1. create login button to send post request to backend for login
+1. Additional: make one of Login || Register show at a time.
