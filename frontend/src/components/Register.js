@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 export default function Register(props) {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -66,6 +66,7 @@ export default function Register(props) {
             registerPost(body);
           }}
         ></input>
+        <Link to="/Login">have an account?</Link>
       </form>
       <br />
     </div>

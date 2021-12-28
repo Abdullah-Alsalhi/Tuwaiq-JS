@@ -13,10 +13,11 @@ app.post("/user/register", (req, res) => {
   User.create(req.body, (err, dataInserted) => {
     if (err) {
       // return handleError(err);
-      res.status(400).json("Email already taken");
-      console.log("Email already taken");
+      res.status(400).json({ message: "This email already taken" });
+      console.log(dataInserted);
     } else {
-      res.status(201).json(dataInserted);
+      res.status(201).json({ message: "Create New User Successfully" });
+      console.log(dataInserted);
     }
   });
 });
@@ -28,23 +29,19 @@ app.post("/user/login", (req, res) => {
     } else {
       if (data.length === 1) {
         if (req.body.password === data[0].password) {
-          res
-            .status(200)
-            .json({
-              message: "Login Successfully",
-              username: data[0].username,
-            });
-            console.log("login Success");
+          res.status(200).json({
+            message: "Login Successfully",
+            username: data[0].username,
+          });
+          console.log(data[0]);
         } else {
           res.status(400).json({ message: "Wrong Password" });
           console.log("Wrong password");
-
         }
       } else {
         res.status(404).json({ message: "Email entered is not registered" });
         console.log("Email entered is not registered");
-         console.log(data);
-
+        console.log(data);
       }
     }
   });

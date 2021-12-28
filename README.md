@@ -91,3 +91,7 @@ npm install react-router-dom@6
 ```
 - create route for Home, Register and Login.
 - Additional: read about Link to add buttons to go for each Route
+- create button <Don't have an account?> to go to Register in Login component
+- create button <Have an account?> to go to Login in Register component
+- create state in App component {isLoggedIn} true || false
+- create state in App component {username} => username

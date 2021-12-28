@@ -10,12 +10,15 @@ import Login from "./components/Login";
 function App() {
   const [tasks, setTask] = useState([]);
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
+
   const deleteAll = () => {
     axios
       .delete(`http://localhost:3001/alltasks`)
       .then((response) => {
         // setTask(response.data);
-        // console.log(response.data);
+        console.log(response.data);
         getData();
       })
       .catch((err) => {
@@ -98,12 +101,19 @@ function App() {
 
   return (
     <div className="App">
+      <nav>
+        <Link to="/home">Home</Link> {" | "}
+        <Link to="/login">Login</Link>
+        {" | "}
+        <Link to="/register">Register</Link>
+      </nav>
+      {username}
       <Routes>
         <Route
           path="/home"
           element={
             <div>
-              <p>{dataMap}</p>
+              {dataMap}
               <Add creatTaskFunction={postNewTask} />
               <button
                 className="Delete-All"
@@ -132,7 +142,12 @@ function App() {
             </div>
           }
         />
-        <Route path="login" element={<Login />} />
+        <Route
+          path="login"
+          element={
+            <Login setIsLoggedIn={setIsLoggedIn} setUsername={setUsername} />
+          }
+        />
         <Route path="register" element={<Register />} />
       </Routes>
 
