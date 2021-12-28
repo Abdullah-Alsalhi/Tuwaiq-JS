@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
+import { Routes, Route, Link } from "react-router-dom";
 import Todo from "./components/Todo";
 import Add from "./components/Add";
 import Register from "./components/Register";
@@ -61,10 +62,12 @@ function App() {
   }, []);
 
   const getFiltered = (STATUS) => {
-    axios.get(`http://localhost:3001/tasks/filter?isCompleted=${STATUS}`).then((response) => {
-      setTask(response.data);
-      // console.log(response.data);
-    });
+    axios
+      .get(`http://localhost:3001/tasks/filter?isCompleted=${STATUS}`)
+      .then((response) => {
+        setTask(response.data);
+        // console.log(response.data);
+      });
   };
 
   const dataMap = tasks.map((taskObj, i) => {
@@ -91,41 +94,49 @@ function App() {
       });
   };
 
-  
-    /* <button onClick={getData}>Get Tasks</button> */
-
+  /* <button onClick={getData}>Get Tasks</button> */
 
   return (
     <div className="App">
-      <Login/>
-      <br/>
-      <Register/>
-      <p>{dataMap}</p>
-      <Add creatTaskFunction={postNewTask} />
-      <button
-        className="Delete-All"
-        onClick={() => {
-          deleteAll();
-        }}
-      >
-        Delete All
-      </button>
-      <button
-        className="Get-finished"
-        onClick={() => {
-          getFiltered(true);
-        }}
-      >
-        GetFinishedTasks
-      </button>
-      <button
-        className="Get-Pending"
-        onClick={() => {
-          getFiltered(false);
-        }}
-      >
-        GetPendingTasks
-      </button>
+      <Routes>
+        <Route
+          path="/home"
+          element={
+            <div>
+              <p>{dataMap}</p>
+              <Add creatTaskFunction={postNewTask} />
+              <button
+                className="Delete-All"
+                onClick={() => {
+                  deleteAll();
+                }}
+              >
+                Delete All
+              </button>
+              <button
+                className="Get-finished"
+                onClick={() => {
+                  getFiltered(true);
+                }}
+              >
+                GetFinishedTasks
+              </button>
+              <button
+                className="Get-Pending"
+                onClick={() => {
+                  getFiltered(false);
+                }}
+              >
+                GetPendingTasks
+              </button>
+            </div>
+          }
+        />
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+      </Routes>
+
+      <br />
     </div>
   );
 }

@@ -70,13 +70,24 @@ npx create-react-app frontend
 
 *Do the followings*
 
-1. create Schema Users consisting of email,password,username.
-1. create post function returns Created New User Successfully for Register.
-1. create post function return return login for Login.
-1. create Register component for react.
-1. create State with username,email,password
-1. create Register button to send post request to backend.
-1. create Login component
-1. create State with username,email
-1. create login button to send post request to backend for login
+1. ~~create Schema Users consisting of email,password,username.~~
+1. ~~create post function returns Created New User Successfully for Register.~~
+1. ~~create post function return return login for Login.~~
+1. ~~create Register component for react.~~
+1. ~~create State with username,email,password~~
+1. ~~create Register button to send post request to backend.~~
+1. ~~create Login component~~
+1. ~~create State with username,email~~
+1. ~~create login button to send post request to backend for login~~
 1. Additional: make one of Login || Register show at a time.
+
+## Day 2
+
+**React router**
+
+- install react router dom
+```bash
+npm install react-router-dom@6
+```
+- create route for Home, Register and Login.
+- Additional: read about Link to add buttons to go for each Route
