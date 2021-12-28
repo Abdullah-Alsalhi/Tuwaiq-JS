@@ -95,3 +95,5 @@ npm install react-router-dom@6
 - create button <Have an account?> to go to Login in Register component
 - create state in App component {isLoggedIn} true || false
 - create state in App component {username} => username
+- create <Logout> button to logout => delete username from state
+- read about route , link , Redirect 
