@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  border: solid red 5px;
+  border: solid #ff6347ad 5px;
   height: fit-content;
   width: fit-content;
   margin: auto;
@@ -24,4 +24,8 @@
 .Register, .Login{
   text-align: left;
   margin-left: 0%;
+}
+
+.Logout{
+  background-color: #f5f5f5;
 }

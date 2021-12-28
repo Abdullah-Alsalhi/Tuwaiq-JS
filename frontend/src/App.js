@@ -6,7 +6,7 @@ import Todo from "./components/Todo";
 import Add from "./components/Add";
 import Register from "./components/Register";
 import Login from "./components/Login";
-
+import Logout from "./components/Logout";
 function App() {
   const [tasks, setTask] = useState([]);
 
@@ -107,10 +107,10 @@ function App() {
         {" | "}
         <Link to="/register">Register</Link> {" | "}
         <Link
-          to="/login"
+          to="/logout"
           onClick={(e) => {
-            e.preventDefault();
             setUsername("");
+            setIsLoggedIn(false);
           }}
         >
           Logout
@@ -158,6 +158,7 @@ function App() {
           }
         />
         <Route path="register" element={<Register />} />
+        <Route path="/logout" element={<Logout />} />
       </Routes>
 
       <br />
