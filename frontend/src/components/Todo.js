@@ -6,9 +6,11 @@ export default function Todo(props) {
     <div className="Todo">
       <p>
         <input
+          className="form-check-input"
           type="checkbox"
           defaultChecked={isCompleted}
-          onClick={() => { // note: you can ignore if else conditions by passing !isCompleted to pass opposite of status
+          onClick={() => {
+            // note: you can ignore if else conditions by passing !isCompleted to pass opposite of status
             if (isCompleted === false) {
               props.editTodoStatus(_id, true);
             } else {
@@ -17,9 +19,10 @@ export default function Todo(props) {
             console.log("From Todo.js", _id, isCompleted);
           }}
         ></input>
+
         <strong>
           <span
-            className="taskStatus"
+            className="fas email col-form-label"
             style={{
               textDecoration: isCompleted ? "line-through" : "none",
             }}
@@ -28,14 +31,14 @@ export default function Todo(props) {
           </span>
         </strong>
       </p>
-      {/* <h2 className="STATUS">{isCompleted === true ? "Done" : "Pending"}</h2> */}
-      <button className="DELETE"
+      <button
+        className="btn btn-outline-warning"
         onClick={() => {
           console.log("Todo.js", _id);
           props.deleteTodo(_id);
         }}
       >
-        Delete
+        <i className="far fa-times-circle "></i>
       </button>
     </div>
   );

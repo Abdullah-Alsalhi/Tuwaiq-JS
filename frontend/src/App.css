@@ -1,11 +1,14 @@
 .App {
+  
+  padding-top: 10px;
+  padding-bottom: 92px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  border: solid #ff6347ad 5px;
-  height: fit-content;
-  width: fit-content;
-  margin: auto;
 }
-
+/* 
 .Todo {
   border: solid blue 3px;
   display: block;
@@ -28,4 +31,52 @@
 
 .Logout{
   background-color: #f5f5f5;
+} */
+
+.Login {
+  box-sizing: content-box;
+  box-shadow: 10px 10px 10px  rgba(147, 161, 192, 0.507);
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 5%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: space-between;
+  border: rgb(255,245,238);
+}
+
+
+
+#TodoApp, .email, .password .Navbar{
+  background-color: #ffffeb;
+}
+
+.Navbar{
+  background-color: var(--squid-ink);
+}
+
+.Logout{
+  box-sizing: content-box;
+  box-shadow: 10px 10px 10px  #EEE;
+  width: fit-content;
+  height: fit-content;
+  margin:auto;
+  margin-top: 5%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: space-between;
+}
+
+#L-border{
+  border-left: chartreuse;
+  background-color: #FAF7BD;
+}
+
+.parent{
+  position: relative;
+}
+
+.child{
+  position:absolute;
+  bottom: 0;
+  left: 0
 }

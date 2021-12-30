@@ -23,42 +23,45 @@ export default function Register(props) {
       });
   };
   return (
-    <div className="Register">
+    <div className="Login border  shadow-lg p-3 mb-5 bg-light rounded row g-3 align-items-center border border-primary">
       <form action="" >
-        <label htmlFor="username">username</label>
+      <h3 className="text-center blockquote p-3 mb-2 bg-dark.bg-gradient text-dark shadow-sm p-3 mb-5 bg-body rounded mb-5 border border-primary" ><b>Todo App</b></h3>
+          <h5 className="bg-light">Todo App Is To Manage Your Daily Duties</h5>
+        <label htmlFor="username" className="email col-form-label"><b>Username</b></label>
         <input
           type="text"
           name="username"
-          className="username"
+          className="form-control"
           placeholder="write your name..."
           onChange={(e) => {
             setUsername(e.target.value);
           }}
         ></input>
         <br />
-        <label htmlFor="email">email</label>
+        <label htmlFor="email"><b>Email</b></label>
         <input
           type="email"
           name="email"
-          className="email"
+          className="form-control"
           placeholder="write your email..."
           onChange={(e) => {
             setEmail(e.target.value);
           }}
         ></input>
         <br />
-        <label htmlFor="password">password</label>
+        <label htmlFor="password"><b>Password</b></label>
+        <br />
         <input
           type="password"
           name="password"
-          className="password"
+          className="form-control"
           placeholder="write your password..."
           onChange={(e) => {
             setPassword(e.target.value);
           }}
         ></input>
         <br/>
-        <input
+        <input className='btn btn-outline-primary me-2'
           type="submit"
           value='Register'
           onClick={(e) => {
@@ -66,7 +69,7 @@ export default function Register(props) {
             registerPost(body);
           }}
         ></input>
-        <Link to="/Login">have an account?</Link>
+        <Link to="/Login" className="btn btn-warning">have an account?</Link>
       </form>
       <br />
     </div>

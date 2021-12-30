@@ -14,13 +14,14 @@ export default function Add(props) {
   return (
     <div className="Add">
       <input
+      className="form-control"
         type="text"
-        placeholder="Add New Task"
+        placeholder="Task..."
         onChange={(e) => {
           setNewTitle(e.target.value);
         }}
       ></input>
-      <button onClick={createNewTodo}>Creat New Task</button>
+      <button className="fas mt-3 btn btn-outline-success" onClick={createNewTodo}><i class="fas fa-thumbtack"></i></button>
     </div>
   );
 }
